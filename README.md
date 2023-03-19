@@ -43,7 +43,38 @@ We ended up using the **MaxViT model** because of it's special properties:
 - Both block + grid attention
 This meant that the model will be able capture the **sequentialness** of the data, leading to better perfomance than normal ViT Models. This hypothesis was validated in our testing.
 
-## Other Techniques
-I
+Implementing the model, however, was also no easy task as it required me to write a seperate training loop to handle all the additional logic. However this custom training loop allowed us to incorporate more techniques than we have ever before.
 
-<img width="500" alt="Screenshot 2566-03-20 at 04 36 38" src="https://user-images.githubusercontent.com/30139280/226211169-b4cf1409-3e5a-423c-9fbf-17b2f3c0287a.png">
+## Other Techniques
+
+<span>
+<img width="500" alt="Screenshot 2566-03-20 at 05 03 23" src="https://user-images.githubusercontent.com/30139280/226212375-7d2dc4aa-1af2-402e-928d-1a0c4193e45e.png">
+<img width="500" alt="Screenshot 2566-03-20 at 05 05 45" src="https://user-images.githubusercontent.com/30139280/226212451-93d55fd1-74d9-4d79-843b-14bf17b56aaa.png">
+<img width="500" alt="Screenshot 2566-03-20 at 05 06 57" src="https://user-images.githubusercontent.com/30139280/226212512-4363d0ad-2221-4c17-b376-02d5d6f68291.png">
+<img width="500" alt="Screenshot 2566-03-20 at 05 08 34" src="https://user-images.githubusercontent.com/30139280/226212588-a42f7f47-2609-4815-affe-8090701627ed.png">
+</span>
+
+In order to boost our score even futher we leveraged the following techniques:
+- **Gradient Accumulation:** Simulating higher batch sizes without all the memory overhead, allowing the model to converge better.
+- **Lookahead Optimization:** Using this relatively technique allowed us to keep two copies of the optimizer (fast and slow) and in theory would have made the model better.
+- **Cross Validation:** This is crucial as our dataset was very small, and conducting cross-validation would mean that our model would be able to see all the data.
+- **Pseudo Labeling:** Using the confident predictions from the model in order to predict the test data and reuse that as additional train data.
+- **Weighted Ensembling:** We used this in order to combine the predictions from each model within the cross validation.
+- **Voting Ensembling:** We then used this in order to combine the predictions from multiple different models.
+
+# Credits:
+- [Parin](https://github.com/parinzee): **ViT and Timm Training Scripts + Techniques**
+- P'Pond:
+- P'Senmee:
+- P'Ten:
+- P'Film:
+
+
+# Final Results
+<img width="800" alt="Screenshot 2566-03-20 at 04 36 38" src="https://user-images.githubusercontent.com/30139280/226211169-b4cf1409-3e5a-423c-9fbf-17b2f3c0287a.png">
+
+
+
+
+
+
