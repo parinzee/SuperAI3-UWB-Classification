@@ -64,10 +64,12 @@ In order to boost our score even futher we leveraged the following techniques:
 
 # Credits:
 - [Parin](https://github.com/parinzee): **ViT and Timm Training Scripts + Techniques**
-- P'Pond:
-- P'Senmee:
-- P'Ten:
-- P'Film:
+- Film: **Cross Validation Scripts + Experiments**
+- Ten: **Model Tuning + Experiments**
+- [Senmee] (https://github.com/senmeetechin): **Data Preprocessing Scripts + Code Refactoring**
+- Pond: **Data Preprocessing Scripts**
+- Boss: **Data Preprocessing Scripts**
+- Tae: **Data Preprocessing Scripts**
 
 
 # Final Results
