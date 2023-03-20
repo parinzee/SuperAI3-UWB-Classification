@@ -64,12 +64,15 @@ In order to boost our score even futher we leveraged the following techniques:
 
 # Credits:
 - [Parin](https://github.com/parinzee): **ViT and Timm Training Scripts + Techniques**
-- Film: **Cross Validation Scripts + Experiments**
+- Film: **Initial Cross Validation Script + Experiments**
 - Ten: **Model Tuning + Experiments**
 - [Senmee](https://github.com/senmeetechin): **Data Preprocessing Scripts + Code Refactoring**
 - Pond: **Data Preprocessing Scripts**
 - Boss: **Data Preprocessing Scripts**
 - Tae: **Data Preprocessing Scripts**
+- Prae: **Hybrid Model Research + Experiments**
+- Champ: **Consulting + Experiments**
+- *EXP House:* **Relentless support, encouragement, and determination**
 
 # Example Codes:
 Our example codes can be accessed via jupyter notebook files in this repositories
