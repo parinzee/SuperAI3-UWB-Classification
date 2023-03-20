@@ -66,11 +66,15 @@ In order to boost our score even futher we leveraged the following techniques:
 - [Parin](https://github.com/parinzee): **ViT and Timm Training Scripts + Techniques**
 - Film: **Cross Validation Scripts + Experiments**
 - Ten: **Model Tuning + Experiments**
-- [Senmee] (https://github.com/senmeetechin): **Data Preprocessing Scripts + Code Refactoring**
+- [Senmee](https://github.com/senmeetechin): **Data Preprocessing Scripts + Code Refactoring**
 - Pond: **Data Preprocessing Scripts**
 - Boss: **Data Preprocessing Scripts**
 - Tae: **Data Preprocessing Scripts**
 
+# Example Codes:
+Our example codes can be accessed via jupyter notebook files in this repositories
+- **SHARING_SignalPreparation.ipynb** for Data Preprocessing Script
+- **SHARING_Timm_Training_For_UWB_Classification.ipynb** for TIMM Training and Interesting Techniques
 
 # Final Results
 <img width="800" alt="Screenshot 2566-03-20 at 04 36 38" src="https://user-images.githubusercontent.com/30139280/226211169-b4cf1409-3e5a-423c-9fbf-17b2f3c0287a.png">
